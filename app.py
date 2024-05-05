@@ -34,18 +34,9 @@ def getSummary(prompt):
   response = requests.post(url, json=payload, headers=headers)
   return response.json()
 
-def index_video(video_url,twelve_labs_key):
-    return response.json()
-
-def create_index(index_name, twelve_labs_key):
-    return response.json()
-
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-for message in st.session_state.messages:
-    with st.chat_message(message["role"]):
-        st.markdown(message["content"])
 # Sidebar section
 st.sidebar.title("Better Swing")
 
